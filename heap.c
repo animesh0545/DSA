@@ -29,7 +29,7 @@ int rc(int i)
 //MAX-HEAPIFY -> O(lgn)
 void heapify(int array[], int size, int i)
 {
-  // Find largest among parent and children nodes and 
+  // If any child node is bigger than parent, swap them and run heapify on that child
   if (size == 1)
   {
     return;
